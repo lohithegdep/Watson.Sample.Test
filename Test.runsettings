@@ -3,7 +3,7 @@
 	<!-- Configurations that affect the Test Framework -->
 	<RunConfiguration>
 			<DisableParallelization>false</DisableParallelization>
-	       <MaxCpuCount>3</MaxCpuCount>
+	       <MaxCpuCount>5</MaxCpuCount>
 	</RunConfiguration>
 
 	<!-- Parameters used by tests at run time -->
@@ -13,6 +13,7 @@
 		<Parameter name="webAppUrl2" value="https://www.seek.com.au/career-advice/page/salary-calculator" />
 		<Parameter name="webAppUserName" value="Admin" />
 		<Parameter name="webAppPassword" value="Password" />
+		<Parameter name="BrowserType" value="Any" />
 	</TestRunParameters>
 
 	<!-- Configuration for loggers -->
@@ -25,7 +26,7 @@
 	<!-- MSTest adapter -->
 	<MSTest>
 		<Parallelize>
-			<Workers>3</Workers>
+			<Workers>5</Workers>
 			<Scope>MethodLevel</Scope>
 		</Parallelize>
 	</MSTest>

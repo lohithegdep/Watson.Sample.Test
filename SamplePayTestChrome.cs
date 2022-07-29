@@ -9,13 +9,12 @@ namespace Watson.Sample.Test
     {
         private string _appUrl;
     
-        public TestContext TestContext { get; set; }
+       // public TestContext TestContext { get; set; }
 
 
         [TestMethod]
         public void PayCalTest1()
-        {
-            
+        {            
             Console.WriteLine("Test 1");
            var _appUrl = TestContext.Properties["webAppUrl"];
            Console.WriteLine((string)_appUrl);
@@ -24,8 +23,8 @@ namespace Watson.Sample.Test
             hpage.PerformFunctionality();
         }
 
-        [TestMethod]
-        public void CalPayTest2()
+        [TestMethod, TestCategory("Smoke")]
+             public void CalPayTest2()
         {
 
             Console.WriteLine("Test 2");

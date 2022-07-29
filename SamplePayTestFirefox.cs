@@ -5,11 +5,11 @@ using Watson.Sample.PageObjects;
 namespace Watson.Sample.Test
 {
     [TestClass]
-    public class SamplePayTestFirefox : TestBase1
+    public class SamplePayTestFirefox : TestBase
     {
         private string _appUrl;
     
-        public TestContext TestContext { get; set; }
+       // public TestContext TestContext { get; set; }
 
 
         
